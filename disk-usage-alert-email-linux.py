@@ -24,3 +24,5 @@ def check_once():
          if int(splitline[4][:-1]) > threshold:
              report_via_email()
 check_once() 
+
+#Enable les secure access in your sender email "https://support.google.com/accounts/answer/6010255" "https://www.google.com/accounts/DisplayUnlockCaptcha"
