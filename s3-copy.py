@@ -5,6 +5,7 @@ import subprocess
 import os 
 import sys
 import shutil
+import re
 
 today = date.today()
 d = datetime.timedelta(days = 2)
@@ -12,7 +13,11 @@ d = datetime.timedelta(days = 2)
 start = today - d
 today = str(today)
 start = str(start)
+bad = ['-']
 
+for i in bad :
+    start = start.replace(i, '')
+print(start)
 
 aws_bucket = "new-test1111"
 localfile = 'D:\\Desktop\\' + str(start)
